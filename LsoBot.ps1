@@ -421,6 +421,10 @@ if($Pilot -match "Serral") {
     $Pilot = "<@108788985148493824>"
 }
 
+if($Pilot -match "Ohio") {
+    $Pilot = "<@107235886218891264>"
+}
+
 #If the difference between the system time and log event time is greater than the time target, stop. 
 
 if ($diff -gt $timeTarget) {
