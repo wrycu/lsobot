@@ -1,7 +1,7 @@
 # BEGIN USER VARIABLES
 
 $logPath = "$env:USERPROFILE\Saved Games\DCS.openbeta_server\Logs\dcs.log"
-$hookUrl = "https://discord.com/api/webhooks/NOTAREALWEBHOOKCHANGEME"
+$hookUrl = "HOOK_URL_HERE"
 
 # END USER VARIABLES
 
@@ -307,6 +307,119 @@ $Grade = $Grade -replace "_", "\_"
 $Pilot = $landingEvent
 $Pilot = $Pilot -replace "^.*(?:initiatorPilotName=)", ""
 $Pilot = $Pilot -replace ",.*$", ""
+
+if($Pilot -match "Saul") {
+    $Pilot = "<@110154653630504960>"
+}
+
+if($Pilot -match "Black") {
+    $Pilot = "<@138491556838506496>"
+}
+
+if($Pilot -match "Breezy") {
+    $Pilot = "<@108401022606508032>"
+}
+
+if($Pilot -match "Essah") {
+    $Pilot = "<@103280382849335296>"
+}
+if($Pilot -match "kevb") {
+    $Pilot = "<@143778093343965184>"
+}
+
+if($Pilot -match "runny") {
+    $Pilot = "<@286162987146936321>"
+}
+
+if($Pilot -match "Foogle") {
+    $Pilot = "<@94828547272605696>"
+}
+
+if($Pilot -match "Heinz") {
+    $Pilot = "<@123282968159584256>"
+}
+
+
+if($Pilot -match "intel") {
+    $Pilot = "<@111233747516403712>"
+}
+
+if($Pilot -match "Kill") {
+    $Pilot = "<@103981464349077504>"
+}
+
+if($Pilot -match "Heinz") {
+    $Pilot = "<@123282968159584256>"
+}
+
+if($Pilot -match "Knub") {
+    $Pilot = "<@110596267926618112>"
+}
+
+if($Pilot -match "Tri") {
+    $Pilot = "<@162050207067013120>"
+}
+
+if($Pilot -match "Wrycu") {
+    $Pilot = "<@108005836579696640>"
+}
+
+if($Pilot -match "Instinct") {
+    $Pilot = "<@107301205222420480>"
+}
+
+if($Pilot -match "Spooky") {
+    $Pilot = "<@150780675950116865>"
+}
+
+if($Pilot -match "Vega") {
+    $Pilot = "<@106848076882292736>"
+}
+
+if($Pilot -match "Abso") {
+    $Pilot = "<@100606220624216064>"
+}
+
+if($Pilot -match "Fracsid") {
+    $Pilot = "<@631495942838812695>"
+}
+
+
+if($Pilot -match "Alphabet") {
+    $Pilot = "<@108387557355601920>"
+}
+
+if($Pilot -match "GDR") {
+    $Pilot = "<@135184282703364096>"
+}
+
+if($Pilot -match "Jive") {
+    $Pilot = "<@107186659761631232>"
+}
+
+if($Pilot -match "Justi") {
+    $Pilot = "<@134419342556135424>"
+}
+
+if($Pilot -match "ProTag") {
+    $Pilot = "<@121700508879683584>"
+}
+
+if($Pilot -match "Racket") {
+    $Pilot = "<@106852273824526336>"
+}
+
+if($Pilot -match "Rico") {
+    $Pilot = "<@297495515866857474>"
+}
+
+if($Pilot -match "roll") {
+    $Pilot = "<@318878626764554240>"
+}
+
+if($Pilot -match "Serral") {
+    $Pilot = "<@108788985148493824>"
+}
 
 #If the difference between the system time and log event time is greater than the time target, stop. 
 
