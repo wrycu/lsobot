@@ -1,5 +1,6 @@
 $continue = $true
-
+Write-Host "Loadng hook URL"
+$hookUrl = Get-Content "hook_url.txt"
 Write-Host "Starting Loop"
 
 while($continue)
@@ -26,7 +27,6 @@ while($continue)
         Write-EventLog -LogName "Application" -Source "LSO Bot" -EventId 3 -EntryType Information -Message "A landing event was detected and sent successfully via Discord." -Category 1
 
         $logPath = "C:\Users\DCS\Saved Games\DCS.openbeta_server\Logs\dcs.log"
-        $hookUrl = "###"
 
         # END USER VARIABLES
 
